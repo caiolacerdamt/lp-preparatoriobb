@@ -1,0 +1,22 @@
+# Arquivos locais e de apoio
+/_backups/
+/docs/
+/preview-server.mjs
+/AGENTS.md
+/CLAUDE.md
+
+# Imagens de trabalho duplicadas na raiz
+/*.png
+/*.webp
+
+# Artefatos temporarios
+/.deploy/
+/.worktrees/
+/node_modules/
+
+# Arquivos do sistema e do editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

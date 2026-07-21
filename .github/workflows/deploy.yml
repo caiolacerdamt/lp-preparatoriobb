@@ -1,0 +1,44 @@
+name: Deploy da landing page
+
+'on':
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-preparatoriobb-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publicar via FTP
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar o codigo
+        uses: actions/checkout@v6
+
+      - name: Preparar somente os arquivos publicos
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          test -d assets
+          mkdir -p .deploy
+          cp index.html .deploy/
+          cp -R assets .deploy/
+
+      - name: Enviar para a Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./.deploy/
+          server-dir: ./
+          log-level: standard

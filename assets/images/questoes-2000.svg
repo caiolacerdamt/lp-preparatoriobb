@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 680" fill="none" role="img" aria-label="Mais de 2000 questoes no padrao Cesgranrio">
+  <defs>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#0A3125" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <!-- cartao -->
+  <rect x="70" y="55" width="460" height="570" rx="38" fill="#0E3D2F" stroke="#F4B740" stroke-width="4" filter="url(#cardShadow)"/>
+
+  <!-- tag -->
+  <rect x="185" y="105" width="230" height="48" rx="24" fill="#F4B740"/>
+  <text x="300" y="138" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="2" fill="#0E3D2F">CESGRANRIO</text>
+
+  <!-- numero grande -->
+  <text x="300" y="325" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="122" font-weight="800" fill="#F4B740">+2000</text>
+  <text x="300" y="388" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="4" fill="#F4F1E8">QUESTÕES</text>
+  <text x="300" y="428" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#7FB69E">comentadas e revisadas</text>
+
+  <!-- gabarito: A B C D, C correta -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle">
+    <circle cx="176" cy="522" r="30" fill="none" stroke="#7FB69E" stroke-width="3"/>
+    <text x="176" y="531" fill="#F4F1E8">A</text>
+
+    <circle cx="259" cy="522" r="30" fill="none" stroke="#7FB69E" stroke-width="3"/>
+    <text x="259" y="531" fill="#F4F1E8">B</text>
+
+    <circle cx="342" cy="522" r="30" fill="#F4B740" stroke="#F4B740" stroke-width="3"/>
+    <text x="342" y="531" fill="#0E3D2F">C</text>
+
+    <circle cx="425" cy="522" r="30" fill="none" stroke="#7FB69E" stroke-width="3"/>
+    <text x="425" y="531" fill="#F4F1E8">D</text>
+  </g>
+</svg>
