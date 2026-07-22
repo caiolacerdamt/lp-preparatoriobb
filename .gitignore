@@ -7,7 +7,6 @@
 
 # Ferramental local de otimizacao (nunca vai pro deploy)
 /optimize-images.mjs
-/subset-fonts.mjs
 /package.json
 /package-lock.json
 /PLANO-OTIMIZACAO-IMAGENS.md
