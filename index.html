@@ -3786,7 +3786,7 @@ body, html { width: 100%; overflow-x: hidden; }
 				<div class="elementor-element elementor-element-b2c9fc7 elementor-align-justify elementor-widget__width-initial btn elementor-widget elementor-widget-button" data-id="b2c9fc7" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.cakto.com.br/hwtq3kx?utm_source=organic&amp;utm_campaign=&amp;utm_medium=&amp;utm_content=&amp;utm_term=">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.cakto.com.br/hwtq3kx">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">QUERO COMEÇAR MINHA PREPARAÇÃO</span>
 					</span>
@@ -4059,7 +4059,7 @@ VOCÊ SÓ INVESTE UMA ÚNICA VEZ!!!					</p>
 				<div class="elementor-element elementor-element-026dfab elementor-align-justify elementor-widget__width-initial btn elementor-widget elementor-widget-button" data-id="026dfab" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.cakto.com.br/hwtq3kx?utm_source=organic&amp;utm_campaign=&amp;utm_medium=&amp;utm_content=&amp;utm_term=">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.cakto.com.br/hwtq3kx">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">QUERO COMEÇAR MINHA PREPARAÇÃO</span>
 					</span>
@@ -4332,4 +4332,89 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
 
 
 
-<span id="elementor-device-mode" class="elementor-screen-only"></span><svg style="display: none;" class="e-font-icon-svg-symbols"></svg></body></html><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
+<span id="elementor-device-mode" class="elementor-screen-only"></span><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "xq7vjj64xz");
+</script>
+<!-- End Microsoft Clarity -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1346343306919239');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1346343306919239&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Utmify Pixel Code -->
+<script>
+  window.pixelId = "6a5d19e50a2816c4cbc3bedd";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<!-- End Utmify Pixel Code -->
+
+<!-- Utmify UTMs Code -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<!-- End Utmify UTMs Code -->
+
+<!-- Repasse fbclid/_fbc/_fbp para o checkout Cakto (mesmo racional da lp_v3) -->
+<script>
+  (function () {
+    function getCookie(name) {
+      var m = document.cookie.match("(?:^|; )" + name + "=([^;]*)");
+      return m ? decodeURIComponent(m[1]) : "";
+    }
+    function fbclidFromFbc(fbc) {
+      // _fbc tem o formato fb.1.<timestamp>.<fbclid>
+      var parts = (fbc || "").split(".");
+      return parts.length >= 4 ? parts.slice(3).join(".") : "";
+    }
+    function comParametrosFb(href) {
+      try {
+        var u = new URL(href, window.location.origin);
+        var qs = new URLSearchParams(window.location.search);
+        var fbc = getCookie("_fbc");
+        var fbp = getCookie("_fbp");
+        var fbclid = qs.get("fbclid") || fbclidFromFbc(fbc);
+        if (fbclid && !u.searchParams.has("fbclid")) u.searchParams.set("fbclid", fbclid);
+        if (fbc && !u.searchParams.has("fbc")) u.searchParams.set("fbc", fbc);
+        if (fbp && !u.searchParams.has("fbp")) u.searchParams.set("fbp", fbp);
+        return u.toString();
+      } catch (e) {
+        return href;
+      }
+    }
+    document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(function (a) {
+      a.addEventListener("click", function () {
+        a.href = comParametrosFb(a.href);
+      }, true);
+    });
+  })();
+</script>
+</body></html><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
